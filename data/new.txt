@@ -1,0 +1,73 @@
+Restarting episode
+----finshed
+Episode Reward: 225.6964406967163
+  1%|▎                                    | 1/100 [00:04<07:03,  4.28s/episodes]Restarting episode
+----finshed
+Episode Reward: 227.46440534591673
+  2%|▋                                    | 2/100 [00:08<06:53,  4.22s/episodes]Restarting episode
+----finshed
+Episode Reward: 229.18359994888309
+  3%|█                                    | 3/100 [00:12<06:46,  4.19s/episodes]Restarting episode
+----finshed
+Episode Reward: 230.85137720108037
+  4%|█▍                                   | 4/100 [00:17<06:52,  4.30s/episodes]Restarting episode
+----finshed
+Episode Reward: 232.46817092895512
+  5%|█▊                                   | 5/100 [00:21<06:50,  4.32s/episodes]Restarting episode
+----finshed
+Episode Reward: 234.03098087310792
+  6%|██▏                                  | 6/100 [00:25<06:45,  4.31s/episodes]Restarting episode
+----finshed
+Episode Reward: 235.54119000434872
+  7%|██▌                                  | 7/100 [00:30<06:41,  4.32s/episodes]Restarting episode
+----finshed
+Episode Reward: 236.99586281776425
+  8%|██▉                                  | 8/100 [00:34<06:33,  4.27s/episodes]Restarting episode
+----finshed
+Episode Reward: 238.39527907371513
+  9%|███▎                                 | 9/100 [00:38<06:23,  4.22s/episodes]Restarting episode
+----finshed
+Episode Reward: 239.73865976333607
+ 10%|███▌                                | 10/100 [00:42<06:27,  4.30s/episodes]Restarting episode
+----finshed
+Episode Reward: 241.02598938941978
+ 11%|███▉                                | 11/100 [00:47<06:21,  4.28s/episodes]Restarting episode
+----finshed
+Episode Reward: 243.44587287902831
+ 12%|████▎                               | 12/100 [00:51<06:20,  4.32s/episodes]Restarting episode
+----finshed
+Episode Reward: 244.60618758201605
+ 13%|████▋                               | 13/100 [00:55<06:20,  4.38s/episodes]Restarting episode
+----finshed
+Episode Reward: 245.70361232757566
+ 14%|█████                               | 14/100 [01:00<06:16,  4.38s/episodes]Restarting episode
+----finshed
+Episode Reward: 246.23204541206363
+ 15%|█████▍                              | 15/100 [01:05<06:20,  4.47s/episodes]Restarting episode
+----finshed
+Episode Reward: 248.28448629379287
+ 16%|█████▊                              | 16/100 [01:09<06:22,  4.56s/episodes]Restarting episode
+----finshed
+Episode Reward: 249.14640655517576
+ 17%|██████                              | 17/100 [01:14<06:25,  4.65s/episodes]Restarting episode
+----finshed
+Episode Reward: 249.9593363285064
+ 18%|██████▍                             | 18/100 [01:19<06:16,  4.59s/episodes]Restarting episode
+----finshed
+Episode Reward: 251.80525650978095
+ 19%|██████▊                             | 19/100 [01:23<06:08,  4.55s/episodes]Restarting episode
+----finshed
+Episode Reward: 252.48802227973954
+ 20%|███████▏                            | 20/100 [01:28<06:03,  4.54s/episodes]Restarting episode
+----finshed
+Episode Reward: 254.19408802986143
+ 21%|███████▌                            | 21/100 [01:32<06:02,  4.59s/episodes]Restarting episode
+----finshed
+Episode Reward: 254.75646095275872
+ 22%|███████▉                            | 22/100 [01:37<05:59,  4.61s/episodes]Restarting episode
+----finshed
+Episode Reward: 256.32461981773366
+ 23%|████████▎                           | 23/100 [01:42<05:56,  4.63s/episodes]Restarting episode
+----finshed
+Episode Reward: 257.8192069530489
+ 24%|████████▋                      
