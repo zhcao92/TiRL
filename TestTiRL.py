@@ -42,13 +42,13 @@ class TiRLAgent(object):
 
         self.env = env
 
-        load_path_rl="/home/icv/Trustworth/stable-baselines/models/sac-5"
-        log_path_rl="/home/icv/Trustworth/stable-baselines/data/sac-5"
+        load_path_rl="/home/icv/Trustworth/TiRL/models/sac-5"
+        log_path_rl="/home/icv/Trustworth/TiRL/data/sac-5"
         
         self.model_rl = SAC.load(load_path_rl, env=env, tensorboard_log=log_path_rl)
 
-        load_path_rule="/home/icv/Trustworth/stable-baselines/models/sac_rule3"
-        log_path_rule="/home/icv/Trustworth/stable-baselines/data/sac_rule3"
+        load_path_rule="/home/icv/Trustworth/TiRL/models/sac_rule3"
+        log_path_rule="/home/icv/Trustworth/TiRL/data/sac_rule3"
         
         self.model_rule = SAC.load(load_path_rule, env=env, tensorboard_log=log_path_rule)
         self.agent_rule = IDM(env)
@@ -131,9 +131,10 @@ if __name__ == '__main__':
             fps_counter.append(frame_time)
 
         print("Episode Reward:",episode_reward," RL Step: ",agent.rl_step," Rule Step: ",agent.rule_step)
+
+        with open("data/TiRL/RL_results.txt", "a") as result_recorder:
+            result_recorder.write(str(episode_reward)+' '+str(agent.rl_step)+''+str(agent.rule_step)+'/n')
+
         agent.reset()
 
-        # for actor in env.actor_list:
-        #         actor.destroy()
-    del env.world
-    del env.client
+        

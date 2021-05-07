@@ -127,8 +127,8 @@ if __name__ == '__main__':
             fps_counter.append(frame_time)
 
         print("Episode Reward:",episode_reward)
+        
+        # Record Results DATA
+        with open("data/TiRL/rule_results.txt", "a") as result_recorder:
+            result_recorder.write(str(episode_reward).join('/n'))
 
-        # for actor in env.actor_list:
-        #         actor.destroy()
-    del env.world
-    del env.client

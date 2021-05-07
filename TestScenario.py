@@ -125,6 +125,7 @@ class CarEnv:
                                         carla.Rotation(0,180,0)
                                         ))
         self.va_leader.set_target_velocity(carla.Vector3D(x=-self.v_initial_leader,y=0,z=0))
+        self.test_finished = False
         self.world.tick()
 
         # Get new state
@@ -155,12 +156,15 @@ class CarEnv:
         lead_v= abs(self.va_leader.get_velocity().x)
 
         # control lead vehicle
-        if abs(ego_x-lead_x) <= self.range_initial_leader:
-            self.va_leader.apply_control(carla.VehicleControl(throttle = 0.0, brake = 0.3))
-            if lead_v <= 2:
-                self.va_leader.apply_control(carla.VehicleControl(throttle = 0.3, brake = 0.0))
+        if not self.test_finished and abs(ego_x-lead_x) <= self.range_initial_leader:
+                self.va_leader.apply_control(carla.VehicleControl(throttle = 0.0, brake = 0.3))
+                if lead_v <= 0.1 and ego_v <= 0.1:
+                    self.test_finished = True
         else:
-            self.va_leader.set_target_velocity(carla.Vector3D(x=-self.v_initial_leader,y=0,z=0))
+            if self.v_initial_leader-lead_v < 5:
+                self.va_leader.set_target_velocity(carla.Vector3D(x=-self.v_initial_leader,y=0,z=0))
+            else:
+                self.va_leader.apply_control(carla.VehicleControl(throttle = 0.6, brake = 0.0))
 
         # get reward
         reward = ego_v / 10

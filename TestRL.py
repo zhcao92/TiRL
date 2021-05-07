@@ -47,8 +47,8 @@ class RLAgent(object):
         self.length_x = 5 # front vehicle length
         self.env = env
 
-        load_path="/home/icv/Trustworth/stable-baselines/models/sac-5"
-        log_path="/home/icv/Trustworth/stable-baselines/data/sac-5"
+        load_path="/home/icv/Trustworth/TiRL/models/sac-5"
+        log_path="/home/icv/Trustworth/TiRL/data/sac-5"
         
         self.model = SAC.load(load_path,env=env, tensorboard_log=log_path)
         print("load model successfully")
@@ -110,7 +110,6 @@ if __name__ == '__main__':
 
         print("Episode Reward:",episode_reward)
 
-        # for actor in env.actor_list:
-        #         actor.destroy()
-    del env.world
-    del env.client
+        # Record Results DATA
+        with open("data/TiRL/RL_results.txt", "a") as result_recorder:
+            result_recorder.write(str(episode_reward).join('/n'))
